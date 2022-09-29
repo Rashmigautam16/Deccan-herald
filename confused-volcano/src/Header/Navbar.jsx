@@ -11,34 +11,47 @@ function Navbar(){
     //     fontWeight:"bold",
     // }
     return (
-            <SimpleGrid  className={styles.navbar} columns={[2, null, 3, 4, 7]} bg="#0087A8">
-            
-                <Image src="https://play-lh.googleusercontent.com/Prhy-5MPajJzjrTbvmdlhBTPNTFGtq1J0NTr01Lmzd5OJhfuYdbjmS7mba_uYpU4l0s=w240-h480-rw" alt="" width="50px" />
-                <Box w='50%' 
+        <Stack bg="#0087A8">
+            <SimpleGrid  className={styles.navbar} columns={[2,3, 3, 4, 7,8]} >
+               
+               <Box  
+                 >
+                <Link to="/" className={styles.pages}  >
+                <Image to="/"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTv29Xo2xvrCGfhdIqH2yqOhR224GgblpvceA&usqp=CAU" alt="" gap="10px"  width="160px" /></Link>
+                </Box>
+                <Box  
                  >
                 <Link to="/" className={styles.pages}  >Home</Link>
                 </Box>
-                <Box w='50%' 
+                <Box  
                  >
                 <Link to="/bengaluru" className={styles.pages} >Bengaluru</Link>
                 </Box>
-                <Box w='50%' 
+                <Box  
                  >
                 <Link to="/national" className={styles.pages} >National</Link>
                 </Box>
-                <Box w='50%' 
+                <Box  
                  >
                 <Link to="/business" className={styles.pages}>Business</Link>
                 </Box>
-                <Box w='50%' 
+                <Box  
                  >
                 <Link to="/sports" className={styles.pages} >Sports</Link>
                 </Box>
-                <Box w='50%' 
+                <Box  
                  >
                 <Link to="/feature" className={styles.pages} >Feature</Link>
                 </Box>
+                <Box  bg="#ffb300">
+                <Link to="/news" className={styles.pages} >
+                   <p style={{color:"red"}}>NEWS</p>
+                   <p style={{color:"black"}}>Newsletters</p>
+                </Link>
+                </Box>
               </SimpleGrid>
+                
+              </Stack>
      
     )
 }
