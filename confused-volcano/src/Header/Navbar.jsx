@@ -11,7 +11,7 @@ function Navbar(){
     //     fontWeight:"bold",
     // }
     return (
-        <Stack bg="#0087A8">
+        <Stack bg="#0087A8" className={styles.header}>
             <SimpleGrid  className={styles.navbar} columns={[2,3, 3, 4, 7,8]} >
                
                <Box  
