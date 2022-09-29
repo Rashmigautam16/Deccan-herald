@@ -7,8 +7,10 @@
 }
 .navbar{
 
-    display: flex;
-    width:100%;
-    justify-content: space-around;
+    display: none;
+    flex-direction: row;
+    width:70%;
+    margin: auto;
+    justify-content: space-between;
     align-items: center;
 }
