@@ -5,7 +5,7 @@ function Footerup(){
 
     const getdata=[
         {
-            heading:"NATIONAL",
+            heading:"NATIONAL",to:"/national",
             p1:"politics",
             p2:"North and Central",
             p3:"South",
@@ -14,6 +14,7 @@ function Footerup(){
         },
         {
             heading:"KARNATAKA",
+            to:"/bengaluru",
             p1:"Top Stories",
             p2:"Politics",
             p3:"Districts",
@@ -21,6 +22,7 @@ function Footerup(){
         },
         {
             heading:"BENGALURU",
+            to:"/bengaluru",
             p1:"Top Stories",
             p2:"Bengaluru Crime",
             p3:"Politics",
@@ -29,6 +31,7 @@ function Footerup(){
         },
         {
             heading:"SPORTS",
+            to:"/sports",
             p1:"Cricket",
             p2:"Formula 1 with DH",
             p3:"Football",
@@ -38,6 +41,7 @@ function Footerup(){
 
         {
             heading:"BUSINESS",
+            to:"/business",
             p1:"Business News",
             p2:"Family Finance",
             p3:"Technology",
@@ -46,12 +50,14 @@ function Footerup(){
         },
         {
             heading:"MULTIMEDIA",
+            to:"/feature",
             p1:"Vidose",
             p2:"Photos",
            
         },
         {
             heading:"OPINION",
+            to:"/national",
             p1:"DH Views",
             p2:"Editorials",
             p3:"Panorama",
@@ -61,6 +67,7 @@ function Footerup(){
         },
         {
             heading:"ENTERTAINMENT",
+            to:"/sports",
             p1:"Entertainments News",
             p2:"Family Finance",
             p3:"DH Showtime",
@@ -108,7 +115,7 @@ function Footerup(){
                <div style={footer}>
                {
                  getdata.map((el)=>(
-                    <FooterDataUp heading={el.heading} p1={el.p1} 
+                    <FooterDataUp heading={el.heading} to={el.to} p1={el.p1} 
                     p2={el.p2} p3={el.p3} p4={el.p4} p5={el.p5} p6={el.p6}/>
                  ))
                }  
