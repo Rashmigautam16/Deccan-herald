@@ -2,12 +2,18 @@
 
 function GetHomedata(props){
     const {img, title,des} = props;
+
+    const mindata={
+        backgroundColor:"#fafafa",
+    }
     return (
-        <div>
-            <img src={img} alt="" />
+        <div style={mindata}>
+            <img src={img} alt="" width="90%" />
+            <div>
             <h4>{title}</h4>
             <p>{des}</p>
-        </div>
+            </div>
+         </div>
     )
 }
 

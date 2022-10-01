@@ -18,11 +18,17 @@ useEffect(()=>{
     getdata();
 },[])
 
+   
+const styledata={
+    display:"grid",
+    gridTemplateColumns:"repeat(auto-fill, minmax(300px, 1fr))",
+    gap:"20px"
+}
     return (
         <>
         <h1>Home</h1>
             <div style={{width:"80%", margin:"auto"}}>
-               <div>
+               <div style={styledata}>
                     {
                         data.map((el)=>(
                             <GetHomedata img={el.urlToImage} title={el.title} des={el.description} />
