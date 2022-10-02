@@ -6,7 +6,7 @@ function Sports(){
     const [data, setData] = useState([])
 
 const getdata=()=>{
-    return fetch(`https://newsapi.org/v2/top-headlines?country=In&sortBy=popularity&category=sports&apiKey=369d1a6575634fabbeb6b01fcc1141d8`)
+    return fetch(`https://saurav.tech/NewsAPI/top-headlines/category/sports/in.json`)
     .then((res)=>res.json())
     .then((res)=>{
         setData(res.articles)

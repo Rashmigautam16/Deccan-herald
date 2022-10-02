@@ -7,7 +7,7 @@ function Bengaluru(){
 
     const getdata=()=>{
         return fetch(`
-        https://newsapi.org/v2/top-headlines?sources=techcrunch&apiKey=369d1a6575634fabbeb6b01fcc1141d8`)
+        https://saurav.tech/NewsAPI/top-headlines/category/technology/in.json`)
         .then((res)=>res.json())
         .then((res)=>{
             setData(res.articles)
