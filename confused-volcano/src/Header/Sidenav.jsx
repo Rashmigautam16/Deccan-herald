@@ -34,8 +34,9 @@ export default function SizeExample() {
           <DrawerCloseButton w="50px" pr="20%"  mt="20px" fontSize="20px" ml="30px" border="none" bg="#0087A8" color="white"/>
           <DrawerHeader  bg="#0087A8" w="20%"  color="white" pt="50px"    fontSize="18px"  fontWeight="700" ></DrawerHeader>
           <DrawerBody bg="#0087A8" w="20%"  color="white" fontSize="16px" fontWeight="700" height="1000px" >
-            
+
             <p style={padding}>BENGALURU <Sidedropdown/><hr color="#d8e2d2"/></p>
+            
             <p style={padding}>KARNATAKA <Sidedropdown/><hr color="#d8e2d2"/></p>
             <p style={padding}>NATIONAL  <Sidedropdown/><hr color="#d8e2d2"/></p>
             <p style={padding}>SPORTS    <Sidedropdown/><hr color="#d8e2d2"/></p>
