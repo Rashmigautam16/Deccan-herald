@@ -6,7 +6,7 @@ function Home(){
 const [data, setData] = useState([])
 
 const getdata=()=>{
-    return fetch(`https://newsapi.org/v2/top-headlines?country=In&category=business&apiKey=d9f630f1445343698df2b4f2ac67ea35`)
+    return fetch(`https://newsapi.org/v2/top-headlines?country=In&category=business&apiKey=369d1a6575634fabbeb6b01fcc1141d8`)
     .then((res)=>res.json())
     .then((res)=>{
         setData(res.articles)
