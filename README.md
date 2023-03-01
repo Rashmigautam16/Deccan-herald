@@ -1,4 +1,4 @@
-##                                                                     Deccan herald
+##                                                                   Deccan herald
 
   
   ##   Framework and Library : ReactJS || ChakraUI || BootStrap
